@@ -22,6 +22,29 @@
     button {
       background: green;
     }
+    .img-wrap:before {
+      content: url('http://www.baidu.com/img/bd_logo1.png');
+    }
+    .style-box {
+      width: 100px;
+      height: 100px;
+      background: #eee;
+      border: 1px solid red;
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      top: -10px;
+    }
+    .absolute-box {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 50px;
+      height: 50px;
+      font-size: 14px;
+      background: yellow;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -45,6 +68,13 @@
   <div>
     下面是图片
     <img src="http://www.baidu.com/img/bd_logo1.png" alt="">
+  </div>
+  <div class="img-wrap">
+    在伪元素中插入一幅画
+  </div>
+  <div class="style-box">
+    给我设置各种样式表吧
+    <div class="absolute-box">绝对定位小快快</div>
   </div>
 </body>
 </html>
